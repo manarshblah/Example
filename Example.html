@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		#D1{
+			border: 7px dashed black;
+			background: #EEE;
+			height: 70px;
+			text-align: center;
+			padding: 50px;
+			font-size :70px;
+
+		}
+		.B1{
+           color: blue;
+           position: relative ;
+           left: 20px;
+           top: 20px;
+           width: 100px;
+           height: 100px;
+           background-color: red;
+		}
+		.D2{
+			border: 7px double rgb(10,0,200);
+			position: relative;
+			left: 30px;
+			top: 50px;
+			margin: 50px;
+			padding: 50px;
+			text-align:center;
+			padding: 10px;
+			background: rgba(60,0,198,0.4);
+			display: none;
+		}
+          .P1{
+          	display: none;
+          	text-decoration-line: underline;
+          	font-size: 20px;
+          	position: relative;
+          	top: 50px;
+          	color: rgb(160,30,200);
+          	text-align:center;
+          }
+          .B3{
+          	color: red;
+          	position: relative;
+          	left: 1600px;
+          	width: 100px;
+           height: 100px;
+           background-color: blue;
+          }
+          .D3{
+          	font-size: 30px;
+          	position: relative;
+          	border: 9px dotted red;
+          	background-image: url(oo.png);
+          	display: none;
+          	letter-spacing: 5px;
+          	direction: ltr;
+          	margin: 10px;
+          	width: 1000px;
+          	height: 500px;
+          	top: 20px;
+          	left: 400px;
+            background-repeat: no-repeat;
+            background-color: #EEE;
+            background-position:top right;
+            border-radius: 20px;
+
+
+          }
+	</style>
+	<script src="jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".B1").click(function(){
+             $(".D2").toggle(3000);
+             $(".P1").hide(5000);
+
+			});
+          $(".B2").click(function(){ $(".P1").show();});
+		});
+		$(document).ready(function(){
+
+          $(".B3").click(function(){$(".D3").show(5000);
+           $(".P1").hide(5000);
+            $(".D2").hide(3000); });
+
+      });
+	</script>
+</head>
+<body>
+<p id="D1">USER INFORMATION</p>
+<button class ="B3">click to show</button>
+<button class="B1"> Click Here </button>
+<div class="D2">
+ <span style="color: white"> User name:   </span>
+ <input type="text" name="I1">
+<br><br>
+<span style="color: white">number phone:</span>
+<input type="text" name="N1">
+<br><br>
+<span style="color: white">g-maile: </span>  
+<input type="g-maile" name="G1">
+<br><br>
+<button type="send" class="B2">( SEND )</button>
+</div>
+
+<pre class="P1"> Thank you for sing in of our bag and hope to like it !!! please here to hide</pre>
+<div class="D3"> <h1 style="color:blue; font-size: 28px;">The Game Of THron</h1>
+is the best of the jobe of <br>
+tlevetion and it <br>
+get alot of vews in 
+<br>
+short perode <br>
+is the best of the jobe <br>
+of tlevetion and<br>
+ it get alot of vews <br>
+in short perode </div>
+</body>
+</html>
